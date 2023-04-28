@@ -1,0 +1,1 @@
+Data for quantum game of life
