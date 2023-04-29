@@ -3,6 +3,7 @@
 # Computer Project for Part II computer projects
 
 ## This is the repository for computing project submission
+### Any issue please contact the author
 
 - [Installation instruction](#installation)
   - [Install JAX:](#install-jax)
@@ -63,6 +64,10 @@ conda install -c conda-forge reikna
     It depends on the platforms that you are using. 
     If something went wrong, please do check the path.
 
+    Also note the link above 'open in vscode' might redirect you to a previous version.
+    There are several broken commits (too large to upload) without LFS.
+    So it is best not to use it. use https to clone this repo or just 
+    download it !
 
 ## Repo structure
 
