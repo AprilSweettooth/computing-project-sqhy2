@@ -30,6 +30,7 @@ def fields_f(p, points, x):
   R = p.c_rep/2 * ((1.0-r).clip(0.0)**2).sum()
   return Fields(U, G, R, E=R-G)
 
+# visualization utils functions for lenia simulation
 def lerp(x, a, b):
   return jp.float32(a)*(1.0-x) + jp.float32(b)*x
 def cmap_e(e):
