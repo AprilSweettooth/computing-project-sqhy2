@@ -52,11 +52,16 @@ conda install -c conda-forge reikna
 
 ## Running the code
 
-    The report is in the format of jupyter notebook and due to large file limit on github, the notebook is split into two parts. The first notebook covers the first section while the second one covers the remaining parts. The default notebook has the marking style, which means most of the simulation parts are commented out and original experiment will not be rerun. Instead, generated files are shown. To redo the simulation you need to follow the instruction in the cells.
+    The report is in the format of jupyter notebook and due to large file limit on github, the notebook is split into two parts. 
+    The first notebook covers the first section while the second one covers the remaining parts. 
+    The default notebook has the marking style, which means most of the simulation parts are commented out and original experiment will not be rerun. 
+    Instead, generated files are shown. To redo the simulation you need to follow the instruction in the cells.
 
     There are some, however, simple visualization code that needs rendring, which typically takes about average ~10-20s.
 
-    Some file path incompatibility might occur during running the code. It depends on the platforms that you are using. If something went wrong, please do check the path.
+    Some file path incompatibility might occur during running the code. 
+    It depends on the platforms that you are using. 
+    If something went wrong, please do check the path.
 
 
 ## Repo structure

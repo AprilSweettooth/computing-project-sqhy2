@@ -9,3 +9,5 @@
     - restore.py : restore the encyclopedia of Bert Chan's original creature 
     - simulation.py : main functions for updating lenia
     - video.py : save and edit videos
+
+Special attributes to tools developed by Lewis Howell: https://github.com/ljhowell/lenia-lh
