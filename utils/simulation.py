@@ -237,6 +237,9 @@ class Simulator(Growth_fn):
         posx = self.cell.shape[-1]//2
         posy = self.cell.shape[-1]//10
         self.ax.text(posx, posy, titles[0], fontsize=15, color='white', ha='center', va='center', alpha = 1)
+        tposx = self.cell.shape[-1]//2
+        tposy = self.cell.shape[-1] - self.cell.shape[-1]//10
+        self.text = self.ax.text(tposx, tposy, f"StepSize={round(self.dT,2)}", fontsize=15, color='white', ha='center', va='center', alpha = 1)
         self.ax.axis('off')
 
         plt.tight_layout()
@@ -367,8 +370,8 @@ class Simulator(Growth_fn):
         plt.tight_layout()
 
     def Aanimate_step(self, i:int) -> plt.imshow:
-        
-        self.t_count += self.error_dt
+        # count the total time elapsed
+        # self.t_count += self.error_dt
 
         self.count += 1
 
@@ -385,9 +388,7 @@ class Simulator(Growth_fn):
         grid_0_display = self.cell.cpu().squeeze()
             
         self.subplot_0.set_array(grid_0_display)
-        posx = self.cell.shape[-1]//2
-        posy = self.cell.shape[-1] - self.cell.shape[-1]//10
-        self.ax.text(posx, posy, f"StepSize={self.dT:.3f} &  accumulated time: {self.t_count:.3f}", fontsize=15, color='white', ha='center', va='center', alpha = 1)
+        self.text.set_text(round(self.dT,2))
         self.ax.axis('off') 
         # self.ax.set_title(f"StepSize={self.dT:.3f} &  accumulated time: {self.t_count:.3f}", fontsize=15)
 
