@@ -70,6 +70,8 @@ conda install -c conda-forge reikna
     So it is best not to use it. use https to clone this repo or just 
     download it !
 
+    Enjoy !
+
 ## Repo structure
 
 
